@@ -10,3 +10,10 @@ body {
 .headline img {
     width: 20%;
 }
+
+.text {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+}
