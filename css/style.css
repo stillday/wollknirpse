@@ -1,14 +1,59 @@
 body {
-    background: #b4a497;
+    background: #fff;
+    margin: 0;
+    padding: 0;
 }
 
+[class*="box"], .box-text {
+    display: block;
+    height: 1000px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+}
+
+[class*="box"] {
+    height: 1000px;
+}
+[class*="box"] span {
+    position: fixex;
+}
+
+.box-text {
+    background-color: #b4a497;
+}
+
+.box-text p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.box-text-2 {
+    background-color: #b4a497;
+}
 .head    {
     width: 100%;
     text-align: center;
 }
 
-.headline img {
+
+.logo img {
+    display: block;
     width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    
 }
 
 .textarea {
@@ -17,4 +62,16 @@ body {
 /*    font-family: 'Pacifico', cursive;*/
     font-family: 'Gloria Hallelujah', cursive;
     color: #fff;
+}
+
+.box-head {
+    background-image: url("/Webseite/image/seedprod.com-3.jpg")
+}
+
+.box-1 {
+    background-image: url("/Webseite/image/seedprod.com-6.jpg")
+}
+
+.box-2 {
+    background-image: url("/Webseite/image/seedprod.com-10.jpg")
 }
