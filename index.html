@@ -39,7 +39,16 @@
             
         </div>
         <div class="box-text-2">
-            
+            <div id="instafeed"></div>
+              <script src="js/instafeed.min.js"></script>
+              <script>
+                var feed = new Instafeed({
+                  get: 'user',
+                  userId: 4189975435, // Ex: 1374300081
+                  clientId: '6a286e41394f409cba3c40e9ed2a521a'
+                });
+                feed.run();
+              </script>
         </div>
         <div class="box-2">
             
