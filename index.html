@@ -12,10 +12,7 @@
     <link rel="icon" href="image/favicon.ico" type="image/x-icon">
     <!-- js for instafeed -->
     <script type="text/javascript" src="js/instafeed.min.js"></script>
-    
-    
-      
-</head>
+    </head>
 <body>
    <div class="content">
         <div class="box-head">
@@ -32,23 +29,20 @@
                     PN! <a href="mailto:wollknirpse@outlook.de">wollknirpse@outlook.de</a><br>
                 </p>
             </div> 
-            <!-- instafeed -->
-            <div id="instafeed"></div>
         </div>
         <div class="box-1">
             
         </div>
         <div class="box-text-2">
-            <div id="instafeed"></div>
-              <script src="js/instafeed.min.js"></script>
-              <script>
+            <script type="text/javascript">
                 var feed = new Instafeed({
-                  get: 'user',
-                  userId: 4189975435, // Ex: 1374300081
-                  clientId: '6a286e41394f409cba3c40e9ed2a521a'
+                    get: 'popular',
+                    tagName: 'awesome',
+                    clientId: '06b4a4731e814ca3a0b30274c017fcb9',
+                    template: '<a class="animation" href="{{link}}"><img src="{{image}}" /></a>'
                 });
                 feed.run();
-              </script>
+            </script>
         </div>
         <div class="box-2">
             
