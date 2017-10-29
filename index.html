@@ -11,7 +11,29 @@
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
     <link rel="icon" href="image/favicon.ico" type="image/x-icon">
     <!-- js for instafeed -->
-    <script type="text/javascript" src="js/instafeed.min.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<!--    <script type="text/javascript" src="js/spectragram.min.js"></script>-->
+    <script src="js/instafeed.min.js"></script>
+    <style>
+    #instafeed {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  
+  
+}
+   #instafeed a {
+    position: relative;
+    width: 50%;
+    
+  }
+    #instafeed a img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    </style>
     </head>
 <body>
    <div class="content">
@@ -34,15 +56,22 @@
             
         </div>
         <div class="box-text-2">
-            <script type="text/javascript">
-                var feed = new Instafeed({
-                    get: 'popular',
-                    tagName: 'awesome',
-                    clientId: '06b4a4731e814ca3a0b30274c017fcb9',
-                    template: '<a class="animation" href="{{link}}"><img src="{{image}}" /></a>'
-                });
-                feed.run();
-            </script>
+             <div id="instafeed">
+                 
+            </div>
+           <div class="instagram">
+               <div class="instagram-inner">
+                    <div class="instagram-pic1">
+                        
+                    </div>
+                    <div class="instagram-pic2">
+                        
+                    </div>
+                    <div class="instagram-pic3">
+                        
+                    </div>
+               </div>
+            </div>
         </div>
         <div class="box-2">
             
@@ -51,6 +80,32 @@
     <footer>
         
     </footer>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<!--
+    
+<script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'awesome',
+        clientId: 'daeb3337cd42413e97ce0e7a6b80da14',
+        accessToken:'4189975435.daeb333.44964ca12422486ba897bb21b61b2e4d'
+    });
+    feed.run();
+</script>
+-->
+    
+    <script type="text/javascript">
+  var userFeed = new Instafeed({
+    get: 'user',
+    userId: '4189975435',
+    clientId: 'daeb3337cd42413e97ce0e7a6b80da14',
+    accessToken:'4189975435.daeb333.44964ca12422486ba897bb21b61b2e4d',
+    resolution: 'standard_resolution',
+    template: '<a href="{{link}}" target="_blank" id="{{id}}" class><img src="{{image}}" /></a>',
+    sortBy: 'most-recent',
+    limit: 4,
+    links: false
+  });
+  userFeed.run();
+</script>
 </body>
 </html>
