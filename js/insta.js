@@ -9,10 +9,11 @@ $(document).ready(function () {
     // feed settings
     var feed = new Instafeed({
         get: 'user',
-        userId: 195761337,
-        accessToken: '195761337.1677ed0.44206195a27b493182a0a4ee4749773d', // http://instagram.pixelunion.net/
+        userId: '4189975435',
+//        clientId: 'daeb3337cd42413e97ce0e7a6b80da14',
+        accessToken:'4189975435.daeb333.44964ca12422486ba897bb21b61b2e4d', // http://instagram.pixelunion.net/
         target: 'instafeed',
-        limit: 15, // max 60
+        limit: 4, // max 60
         sortBy: 'most-recent',
         resolution: 'standard_resolution',
         // when each set of images are loaded... *

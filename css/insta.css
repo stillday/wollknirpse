@@ -1,0 +1,157 @@
+/* Global Styles */
+
+@import url("//fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
+
+/*
+html,body {
+background:#222;
+font-family:"Open Sans Condensed", sans-serif;
+height:100%;
+width:100%;
+}
+*/
+
+
+/* Template Styles */
+
+#instafeed {
+margin:.5rem;
+}
+
+#instafeed a {
+box-shadow:0 1px 3px rgba(0,0,0,.7);
+color:#444;
+display:inline-block;
+margin:.5rem;
+overflow:hidden;
+position:relative;
+text-decoration:none;
+width:calc(100% / 4 - 1rem);
+}
+
+#instafeed img {
+display:block;
+height:auto;
+max-width:100%;
+width:100%;
+}
+
+#instafeed .filter {
+background-color:#f6f6f6;
+box-shadow:0 0 5px 0 rgba(0,0,0,.2);
+display:block;
+font-size:1rem;
+padding:10px;
+position:absolute;
+right:-30px;
+text-align:center;
+top:12px;
+transform:rotate(45deg);
+width:100px;
+}
+
+#instafeed .info {
+background-color:#f6f6f6;
+height:auto;
+padding:.4rem .6rem .3rem;
+}
+
+#instafeed .info p {
+font-size:1.1rem;
+line-height:1.5rem;
+overflow:hidden;
+text-overflow:ellipsis;
+white-space:nowrap;
+}
+
+#instafeed .likes {
+position:absolute;
+right:.6rem;
+bottom:.3rem;
+}
+
+#instafeed .likes p {
+font-size:.9rem;
+position:absolute;
+right:1.2rem;
+bottom:.3rem;
+}
+
+#more,
+#nomore {
+background-color:#f6f6f6;
+box-shadow:0 1px 3px rgba(0,0,0,.7);
+cursor:pointer;
+display:none;
+margin:.5rem 1rem 0;
+padding:.8rem .6rem .7rem;
+}
+
+#more p,
+#nomore p {
+color:#444;
+display:inline;
+font-size:1rem;
+}
+
+#more span,
+#nomore span {
+position:relative;
+top:1px;
+}
+
+#nomore {
+cursor:auto;
+opacity:.4;
+}
+
+
+/* Icon Font Styles */
+
+.oi::before {
+font-size:.9rem;
+margin-right:.5rem;
+}
+
+.oi[data-glyph="comment-square"]::before {
+color:#a4d0e1;
+}
+
+.oi[data-glyph="compass"]::before {
+color:#efc7e2;
+}
+
+.oi[data-glyph="clock"]::before {
+color:#a7e9c0;
+}
+
+.oi[data-glyph="heart"]::before {
+color:#f8c0d0;
+margin-right:0;
+position:relative;
+top:-3px;
+}
+
+.oi[data-glyph="reload"]::before,
+.oi[data-glyph="check"]::before {
+color:#bbb;
+}
+
+
+/* Media Queries */
+
+@media screen and (min-width:1400px) {
+#instafeed a { width:calc(100% / 5 - 1rem); }
+}
+
+@media screen and (max-width:1200px) {
+#instafeed a { width:calc(100% / 3 - 1rem); }
+}
+
+@media screen and (max-width:800px) {
+#instafeed a { width:calc(100% / 2 - 1rem); }
+}
+
+@media screen and (max-width:480px) {
+#instafeed a { width:calc(100% - 1rem); }
+}
