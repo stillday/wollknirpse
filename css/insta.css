@@ -68,6 +68,10 @@ img {
   column-fill: auto;
 }
 
+#instafeed a {
+    margin: auto;
+}
+
 .post {
   display: inline-block;
   margin: 0 2px 15px;
